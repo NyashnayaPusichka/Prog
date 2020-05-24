@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-main()
+int main()
 {
 	char str[128];
 	printf("String: ");
