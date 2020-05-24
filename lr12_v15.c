@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-int sort_dec(float* arr, int n);
+void sort_dec(float* arr, int n);
 
 int main()
 {
@@ -27,7 +27,7 @@ int main()
 	return 0;
 }
 
-int sort_dec(float* arr, int n)
+void sort_dec(float* arr, int n)
 {
 	float t;
 	for (int i = 0; i < n - 1; i++)
