@@ -16,6 +16,8 @@ int main()
 	strcat(cat, str);
 	strcat(cat, sub);
 	
+	puts(cat);
+	
 	system("pause");
 	return 0;
 }
