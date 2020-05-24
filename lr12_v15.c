@@ -13,7 +13,7 @@ int main()
 		for (i = 0; i < n; i++)
 		{
 			printf("m1[%i] = ", i);
-			scanf_s("%i", m + i);
+			scanf_s("%f", m + i);
 		}
 		for (i = 0; i < n - 1; i++)
 			if (m[i + 1] == m[i] + 1)
