@@ -6,12 +6,9 @@
 
 int main()
 {
-	char str[256], sub[256];
-	char cat[sizeof(str) + sizeof(sub)];
-	
+	char str[256], sub[256], cat[sizeof(str) + sizeof(sub)];
 	printf("String: ");
 	gets_s(str, sizeof(str));
-	
 	printf("Substring: ");
 	gets_s(sub, sizeof(sub));
 	
