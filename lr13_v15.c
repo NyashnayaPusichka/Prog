@@ -7,6 +7,7 @@
 int main()
 {
 	char str[128], num[sizeof(str) * 2];
+	*num = '\0';
 	printf("String: ");
 	gets_s(str, sizeof(str));
 	
