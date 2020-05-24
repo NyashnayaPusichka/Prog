@@ -11,7 +11,7 @@ int main()
 	gets_s(str, sizeof(str));
 	printf("Substring: ");
 	gets_s(sub, sizeof(sub));
-	
+	strcat(str1, sub, 0)
 	
 	
 	system("pause");
