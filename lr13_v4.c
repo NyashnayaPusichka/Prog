@@ -1,23 +1,22 @@
 #define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#include <math.h>
 #include <string.h>
 
-#define MAX 128
-
-main()
+int main()
 {
-	const char enter = '\r';
-	int i = 0, x, z = 1, n = 0;
-	char s[MAX], s1[MAX];
-	char str1[2000];
-	printf("s=");
-	gets_s(s, MAX);
-	printf("\ns1=");
-	gets_s(s1, MAX);
-	_getch();
+	char str[256], sub[256];
+	char cat[sizeof(str) + sizeof(sub)];
+	
+	printf("String: ");
+	gets_s(str, sizeof(str));
+	
+	printf("Substring: ");
+	gets_s(sub, sizeof(sub));
+	
+	
+	
+	system("pause");
 	return 0;
 }
