@@ -11,8 +11,10 @@ int main()
 	gets_s(str, sizeof(str));
 	printf("Substring: ");
 	gets_s(sub, sizeof(sub));
-	strcat(str1, sub, 0)
 	
+	strcpy(cat, sub);
+	strcat(cat, str);
+	strcat(cat, sub);
 	
 	system("pause");
 	return 0;
