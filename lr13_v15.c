@@ -18,7 +18,7 @@ int main()
 			// TODO
 		}
 	
-	printf("Result: %s", num)
+	printf("Result: %s\nSum: %i", num, sum)
 	_getch();
 	return 0;
 }
