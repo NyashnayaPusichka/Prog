@@ -16,8 +16,7 @@ int main()
 	strcat(cat, str);
 	strcat(cat, sub);
 	
-	puts(cat);
-	
+	printf("Result: %s", cat);
 	system("pause");
 	return 0;
 }
