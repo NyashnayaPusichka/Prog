@@ -18,7 +18,7 @@ int main()
 		for (i = 0; i < n - 1; i++)
 			if (m[i + 1] == m[i] + 1)
 			{
-				printf("m = %5.2f  m = %5.2f", m[i + 1], m[i] + 1)
+				printf("m = %5.2f  m = %5.2f", m[i + 1], m[i] + 1);
 				break;
 			}
 	}
