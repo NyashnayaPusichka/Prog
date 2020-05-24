@@ -23,17 +23,15 @@ main()
 				printf("m2[%i] = ", i);
 				scanf_s("%i", &m2[i]);
 			}
-			sort_dec(m1, n);
 
 			printf("\n");
 			for (int i = 0; i < n; i++)
 				printf("m1[%i] = %f\n", i, m1[i]);
-			sort_dec(m2, n);
 
 			printf("\n");
 			for (int i = 0; i < n; i++)
 				printf("m2[%i] = %f\n", i, m2[i]);
-			printf("m1 = %i\nm2 = %i", sort_dec(m1, n), sort_dec(m2, n));
+			printf("\nm1 = %i\nm2 = %i", sort_dec(m1, n), sort_dec(m2, n));
 	}
 	else printf("Wrong number");
 	_getch();
