@@ -16,6 +16,11 @@ main()
 			printf("m1[%i] = ", i);
 			scanf_s("%i", &m[i]);
 		}
+		for (i = 0; i < n; i++)
+		{
+			if (m[i + 1] = m[i] + 1)
+				printf("m = %5.2f  m = %5.2f", m[i + 1], m[i] + 1)
+		}
 	}
 	else printf("Wrong number");
 	_getch();
