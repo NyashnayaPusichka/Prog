@@ -14,9 +14,8 @@ int main()
 	for (int i = 0; str[i] != '\0'; ++i)
 		if (isdigit(str[i]))
 		{
-			itoa(i);
+			strcat(cat, itoa(i));
 			sum += i;
-			// TODO
 		}
 	
 	printf("Result: %s\nSum: %i", num, sum)
