@@ -21,7 +21,8 @@ int main()
 			sum += i;
 		}
 	
-	num[strlen(num) - 1] = '\0';
+	int len = strlen(num);
+	if (len) num[len - 1] = '\0';
 	printf("Result: %s\nSum: %i", num, sum);
 	system("pause");
 	return 0;
