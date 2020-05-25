@@ -5,7 +5,7 @@
 
 int main()
 {
-	char str[128], num[sizeof(str) / sizeof(*str) * 2];
+	char str[128], num[sizeof(str) / sizeof(*str) * 2], buffer[64];
 	*num = '\0';
 	printf("String: ");
 	gets_s(str, sizeof(str) / sizeof(*str));
@@ -14,7 +14,7 @@ int main()
 	for (int i = 0; str[i] != '\0'; ++i)
 		if (isdigit(str[i]))
 		{
-			strcat(cat, itoa(i));
+			strcat(cat, itoa(i, buffer, 10));
 			sum += i;
 		}
 	
