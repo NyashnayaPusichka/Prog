@@ -6,10 +6,10 @@
 
 int main()
 {
-	char str[128], num[sizeof(str) * 2];
+	char str[128], num[(sizeof(str) * 2) / sizeof(*str)];
 	*num = '\0';
 	printf("String: ");
-	gets_s(str, sizeof(str));
+	gets_s(str, sizeof(str) / sizeof(*str));
 	
 	int sum = 0;
 	for(int i = 0, i2 = 0; str[i] != '\0'; ++i)
