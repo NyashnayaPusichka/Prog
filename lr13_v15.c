@@ -12,15 +12,12 @@ int main()
 	gets_s(str, sizeof(str) / sizeof(*str));
 	
 	int sum = 0;
-	for(int i = 0, i2 = 0; str[i] != '\0'; ++i)
+	for (int i = 0; str[i] != '\0'; ++i)
 		if (isdigit(str[i]))
 		{
-			sum += i;
-			num[i2++] = (char)(i + 48);
-			num[i2++] = ' ';
+			// TODO
 		}
 	
-	num[i2 - 1] = '\0';
 	printf("Result: %s\nSum: %i", num, sum)
 	system("pause");
 	return 0;
