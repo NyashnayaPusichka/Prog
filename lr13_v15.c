@@ -15,7 +15,8 @@ int main()
 	for (int i = 0; str[i] != '\0'; ++i)
 		if (isdigit(str[i]))
 		{
-			strcat(num, _itoa(i, buffer, 10));
+			if (_itoa_s(i, buffer, 10)) return 1;
+			strcat(num, buffer);
 			sum += i;
 		}
 	
