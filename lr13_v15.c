@@ -6,7 +6,7 @@
 
 int main()
 {
-	char str[128], num[(sizeof(str) * 2) / sizeof(*str)];
+	char str[128], num[sizeof(str) / sizeof(*str) * 2];
 	*num = '\0';
 	printf("String: ");
 	gets_s(str, sizeof(str) / sizeof(*str));
@@ -22,6 +22,6 @@ int main()
 	
 	num[i2 - 1] = '\0';
 	printf("Result: %s\nSum: %i", num, sum)
-	_getch();
+	system("pause");
 	return 0;
 }
