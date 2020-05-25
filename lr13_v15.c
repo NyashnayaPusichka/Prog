@@ -18,7 +18,7 @@ int main()
 			sum += i;
 		}
 	
-	printf("Result: %s\nSum: %i", num, sum)
+	printf("Result: %s\nSum: %i", num, sum);
 	system("pause");
 	return 0;
 }
