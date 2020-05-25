@@ -5,7 +5,8 @@
 
 int main()
 {
-	char str[128], num[sizeof(str) / sizeof(*str) * 2], buffer[64];
+	char str[128], buffer[64];
+	char num[sizeof(str) / sizeof(*str) * 2];
 	*num = '\0';
 	printf("String: ");
 	gets_s(str, sizeof(str) / sizeof(*str));
